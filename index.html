@@ -128,15 +128,9 @@
 
   /* ---- console shell ---- */
   .console {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    box-shadow: var(--shadow);
-    overflow: hidden;
   }
 
   .console__band {
-    background: linear-gradient(180deg, var(--surface-2), var(--surface));
     border-bottom: 1px solid var(--line);
     padding: 22px clamp(18px, 4vw, 34px) 18px;
     display: flex;
@@ -603,6 +597,7 @@
         <div class="actions">
           <button class="btn" id="btn-guide">Read more on why this is important →</button>
           <button class="btn btn--ghost" id="btn-replay">Start over</button>
+          <a class="btn btn--ghost" href="https://deepap-13.github.io/the-accountability-files/">Play another policy game →</a>
         </div>
       </section>
 
@@ -665,6 +660,25 @@
             <p>Further reading: <a href="https://www.weforum.org/publications/the-future-is-collective-advancing-collective-social-innovation-to-address-societys-biggest-challenges/" target="_blank" rel="noopener noreferrer">World Economic Forum &amp; Schwab Foundation, "The Future Is Collective" (2025)</a> — on the Shikshagraha scale-up referenced above.</p>
             <p>No data from this tool is collected or stored. Your score is visible only on your own screen.</p>
           </div>
+
+          <div class="section-head">Feedback</div>
+          <p class="section-sub">Have a case study to suggest, or a note on how a pathway is framed? Leave a comment below — it's hosted as a public GitHub Discussion on this project's repo, so it needs a GitHub sign-in.</p>
+          <div id="giscus-comments"></div>
+          <script src="https://giscus.app/client.js"
+                  data-repo="deepap-13/signal-box"
+                  data-repo-id="R_kgDOT9XtUA"
+                  data-category="General"
+                  data-category-id="DIC_kwDOT9XtUM4DDuJ5"
+                  data-mapping="pathname"
+                  data-strict="0"
+                  data-reactions-enabled="1"
+                  data-emit-metadata="0"
+                  data-input-position="top"
+                  data-theme="light"
+                  data-lang="en"
+                  crossorigin="anonymous"
+                  async>
+          </script>
 
           <div class="actions">
             <button class="btn btn--ghost" id="btn-replay-2">Start over</button>
